@@ -3,18 +3,22 @@ val lang = data.filter(line=>line.contains("<java>"))
 val count=lang.count()
 lang.saveAsTextFile("/user/mds747/project/javaResult")
 sc.parallelize(Seq(count)).saveAsTextFile("/user/mds747/project/javaCount")
+
 val lang = data.filter(line=>line.contains("<c#>"))
 val count=lang.count()
 lang.saveAsTextFile("/user/mds747/project/c#Result")
 sc.parallelize(Seq(count)).saveAsTextFile("/user/mds747/project/c#Count")
+
 val lang = data.filter(line=>line.contains("<c++>"))
 val count=lang.count()
 lang.saveAsTextFile("/user/mds747/project/c++Result")
 sc.parallelize(Seq(count)).saveAsTextFile("/user/mds747/project/c++Count")
+
 val lang = data.filter(line=>line.contains("<python>"))
 val count=lang.count()
 lang.saveAsTextFile("/user/mds747/project/pythonResult")
 sc.parallelize(Seq(count)).saveAsTextFile("/user/mds747/project/pythonCount")
+
 val lang = data.filter(line=>line.contains("<html>"))
 val count=lang.count()
 lang.saveAsTextFile("/user/mds747/project/htmlResult")
