@@ -23,4 +23,5 @@ select tags,sum(answer),sum(score) from stack_overflow1 where tags like '%<power
 select tags,sum(answer),sum(score) from stack_overflow1 where tags like '%<brainfuck>%';
 select tags,sum(answer),sum(score) from stack_overflow1 where tags like '%<swift>%';
 select tags,sum(answer),sum(score) from stack_overflow1 where tags like '%<haskell>%';
+select tags,sum(answer),sum(score) from stack_overflow1 where tags like '%<sas>%';
  
