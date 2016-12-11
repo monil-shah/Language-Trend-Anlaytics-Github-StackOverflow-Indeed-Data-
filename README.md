@@ -28,7 +28,7 @@ In /Dataprofiling/Indeed
             Type of file Download: JSON format using Github API
 
 In /Dataprofiling/Github
-* Only some fields of the json dataset are stored like event_id, event_repo_languages, event_repo_id,event_repo_name, event_payload.
+* Only some fields of the json dataset are stored like event_id, event_repo_languages, event_repo_id,event_repo_name, payload etc.
 * ProfileMap.py, ProfileReduce.py is the code for profiling data.
 * Output is a text file which contains json records and fed into CleanMap.
 
