@@ -59,3 +59,11 @@ In /DataCleaning/Indeed
       
       /DataAnalytic/IndeedPairingTopLanguages.scala  - This code finds the ranking of pairing of top 20 languages from the dataset. The top 20 languages are collective ranking for Analytic iteration 1.
       
+### Github
+
+     /DataAnalytic/analyzeGithub.py - This code finds Language ranking on the basic of number of events from 15th nov till 30th nov
+     
+     /DataAnalytic/analyzeGithubTrends.py - This code finds language ranking/daily trends for each day from 15th nov till 30th nov
+
+     /DataAnalytic/analyzePairwiseGithub.py = This code finds the ranking of pairing of top 20 languages that were common to each event from the data set.
+ 
