@@ -6,24 +6,21 @@ Dataset 1 :  Stack Overflow-
             
             Data: Static Archival
             Type of file Download: XML Download
-* Item 
-In /Dataprofiling/StackOverflow  
 
-1) Parse the XML File of Dataset using code in Data Transformation folder.
-2) profile_mapper.java, profile_reducer.java and profile.java is the code for profiling data.
-3) Output is a text file.
+In /Dataprofiling/StackOverflow  
+* Parse the XML File of Dataset using code in Data Transformation folder.
+* profile_mapper.java, profile_reducer.java and profile.java is the code for profiling data.
+* Output is a text file.
 
 # Data Cleaning
 Dataset 1: StackOverflow
-* Item
 
 In /DataCleaning/StackOerflow
-
-1) Parse the XML File of Dataset from profiling code.
-2) Use the output of this file as input for clean_mapper.java
-3) clean-mapper.java and clean_reducer.java is mapreduce code for cleaning the data.
-4) clean.java is the driver code for mapreduce
-5) Output for this is a text file.
+*  Parse the XML File of Dataset from profiling code.
+*  Use the output of this file as input for clean_mapper.java
+*  clean-mapper.java and clean_reducer.java is mapreduce code for cleaning the data.
+*  clean.java is the driver code for mapreduce
+*  Output for this is a text file.
 
 # Data Analytic
 StackOverflow: 
