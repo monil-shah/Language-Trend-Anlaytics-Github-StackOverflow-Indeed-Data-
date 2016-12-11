@@ -2,7 +2,7 @@
 In this Big Data Analytics project, we are finding the language trend analytics and its effect on the interview process using the data from Github API, Stackoverflow API and Indeed API
 
 # Data Profiling
-Dataset 1 :  Stack Overflow-
+### Dataset 1 :  Stack Overflow-
             
             Data: Static Archival
             Type of file Download: XML Download
@@ -13,7 +13,7 @@ In /Dataprofiling/StackOverflow
 * Output is a text file.
 
 # Data Cleaning
-Dataset 1: StackOverflow
+### Dataset 1: StackOverflow
 
 In /DataCleaning/StackOerflow
 *  Parse the XML File of Dataset from profiling code.
@@ -23,7 +23,7 @@ In /DataCleaning/StackOerflow
 *  Output for this is a text file.
 
 # Data Analytic
-StackOverflow: 
+### StackOverflow: 
      
      /DataAnalytic/StackOverflowAnalytics.scala - This code finds the Language Ranking on the basis of number of records.
                                                    Also , outputs new files for tags with each language from Github Rankings
