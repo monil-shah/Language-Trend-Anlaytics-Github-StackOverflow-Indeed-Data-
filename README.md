@@ -22,6 +22,16 @@ In /Dataprofiling/Indeed
 * ProfilingMapper.java, ProfilingReducer.java and IndeedProfileImplementation.java is the code for profiling data.
 * Output is a text file.
 
+### Dataset 3: Github
+
+            Data: Static
+            Type of file Download: JSON format using Github API
+
+In /Dataprofiling/Github
+* Only some fields of the json dataset are stored like event_id, event_repo_languages, event_repo_id,event_repo_name, event_payload.
+* ProfileMap.py, ProfileReduce.py is the code for profiling data.
+* Output is a text file which contains json records and fed into CleanMap.
+
 # Data Cleaning
 ### Dataset 1: StackOverflow
 
@@ -46,7 +56,7 @@ In /DataCleaning/Indeed
 In /DataCleaning/Github
 * In CleanMap.py the JSON dataset is parsed. Each line from STDIN represents an event. Some events contain no languages at all. We filter for events having atleast one programming language.
 * The Output from CleanMap.py is (event_id, cleaned_json_record_of_event_id) ie. it outputs cleaned records with key as event_id and value as the json record.
-* CleanReduce.py splits the key and value, and stores the value (record) line by line.
+* CleanReduce.py splits the key and value, and stores the value (record) line by line. Output is a text file with json records.
 # Data Analytic
 ### StackOverflow: 
      
