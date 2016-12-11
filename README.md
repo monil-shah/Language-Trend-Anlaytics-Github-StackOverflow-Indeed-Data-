@@ -3,16 +3,23 @@ In this Big Data Analytics project, we are finding the language trend analytics 
 
 # Data Profiling
 Dataset 1 :  Stack Overflow-
+            
             Data: Static Archival
             Type of file Download: XML Download
-In /Dataprofiling/StackOverflow            
+* Item 
+In /Dataprofiling/StackOverflow   
+* Item
+
 1) Parse the XML File of Dataset using code in Data Transformation folder.
 2) profile_mapper.java, profile_reducer.java and profile.java is the code for profiling data.
 3) Output is a text file.
 
 # Data Cleaning
 Dataset 1: StackOverflow
+* Item
 In /DataCleaning/StackOerflow
+* Item
+
 1) Parse the XML File of Dataset from profiling code.
 2) Use the output of this file as input for clean_mapper.java
 3) clean-mapper.java and clean_reducer.java is mapreduce code for cleaning the data.
