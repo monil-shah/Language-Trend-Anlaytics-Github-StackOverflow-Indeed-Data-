@@ -12,6 +12,16 @@ In /Dataprofiling/StackOverflow
 * profile_mapper.java, profile_reducer.java and profile.java is the code for profiling data.
 * Output is a text file.
 
+### Dataset 2 : Indeed.com
+            
+            Data: Static
+            Type of file Download: JSON format using Indeed API
+            
+In /Dataprofiling/Indeed  
+* The JSON dataset file is converted to text file by including only the required fields.
+* ProfilingMapper.java, ProfilingReducer.java and IndeedProfileImplementation.java is the code for profiling data.
+* Output is a text file.
+
 # Data Cleaning
 ### Dataset 1: StackOverflow
 
@@ -20,6 +30,15 @@ In /DataCleaning/StackOerflow
 *  Use the output of this file as input for clean_mapper.java
 *  clean-mapper.java and clean_reducer.java is mapreduce code for cleaning the data.
 *  clean.java is the driver code for mapreduce
+*  Output for this is a text file.
+
+### Dataset 2: Indeed.com
+
+In /DataCleaning/Indeed
+*  The JSON dataset file is converted to text file by including only the required fields.
+*  Use the output of this file as input for CleaningMapper.java
+*  CleaningMapper.java and CleaningReducer.java is mapreduce code for cleaning the data.
+*  IndeedCleanImplementation.java is the driver code for mapreduce
 *  Output for this is a text file.
 
 # Data Analytic
@@ -31,3 +50,12 @@ In /DataCleaning/StackOerflow
       /DataAnalytic/StackOverflowPairingtop20.scala  - This code finds the ranking of pairing  of top 20 languages from the dataset. The top 20 languages are collective ranking for Analytic iteration 1.
       
       /DataAnalytic/StackOverflow_answercount-score.hql - This is a hive file which ranks top 20 languages from StackOverflow Dataset on the basis of questions answered and the score received. The top 20 languages are from Analytic iteration-1.
+      
+### Indeed.com: 
+     
+     /DataAnalytic/IndeedAnalytic2.scala - This code finds the Language Ranking on the basis of number of records i.e. Job description for respective Languages.
+                                                   
+      /DataAnalytic/IndeedAnalytic1.scala  - This code outputs pair count of respective language with each of the other languages found together in Job descriptions of all jobs.
+      
+      /DataAnalytic/IndeedPairingTopLanguages.scala  - This code finds the ranking of pairing of top 20 languages from the dataset. The top 20 languages are collective ranking for Analytic iteration 1.
+      
