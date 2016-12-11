@@ -41,6 +41,12 @@ In /DataCleaning/Indeed
 *  IndeedCleanImplementation.java is the driver code for mapreduce
 *  Output for this is a text file.
 
+### Dataset 3: Github
+
+In /DataCleaning/Github
+* In CleanMap.py the JSON dataset is parsed. Each line from STDIN represents an event. Some events contain no languages at all. We filter for events having atleast one programming language.
+* The Output from CleanMap.py is (event_id, cleaned_json_record_of_event_id) ie. it outputs cleaned records with key as event_id and value as the json record.
+* CleanReduce.py splits the key and value, and stores the value (record) line by line.
 # Data Analytic
 ### StackOverflow: 
      
@@ -59,7 +65,7 @@ In /DataCleaning/Indeed
       
       /DataAnalytic/IndeedPairingTopLanguages.scala  - This code finds the ranking of pairing of top 20 languages from the dataset. The top 20 languages are collective ranking for Analytic iteration 1.
       
-### Github
+### Github:
 
      /DataAnalytic/analyzeGithub.py - This code finds Language ranking on the basic of number of events from 15th nov till 30th nov
      
